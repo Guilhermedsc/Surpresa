@@ -13,7 +13,7 @@ body {
 
 .painel {
     background-color: white;
-    width: 90%;
+    width: 80%;
     max-width: 400px;
     max-height: 90%;
     border-radius: 20px;
@@ -23,15 +23,15 @@ body {
     overflow: hidden;
 }
 
+.painel h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
 .painel img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-}
-
-.painel h1 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
 }
 
 .painel h2 {
@@ -76,22 +76,4 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: top 0.4s ease, left 0.4s ease; /* Transições suaves */
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    .painel h1 {
-        font-size: 1.5rem;
-    }
-
-    .painel h2 {
-        font-size: 1rem;
-    }
-
-    #sim,
-    #nao {
-        height: 40px;
-        width: 90px;
-        font-size: 0.9rem;
-    }
 }
