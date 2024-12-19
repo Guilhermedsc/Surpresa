@@ -1,0 +1,97 @@
+/* Body: Centralizado e sem rolagem */
+body {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.painel {
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    max-height: 90%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.painel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.painel h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.painel h2 {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: black;
+}
+
+/* Alinhamento do contêiner de botões */
+.painel .buttons {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 10px; /* Espaço entre os botões */
+}
+
+/* Botão Sim */
+#sim {
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#sim:hover {
+    transform: scale(1.1);
+}
+
+/* Botão Não */
+#nao {
+    position: absolute; /* Permite movimentar livremente */
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: top 0.4s ease, left 0.4s ease; /* Transições suaves */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .painel h1 {
+        font-size: 1.5rem;
+    }
+
+    .painel h2 {
+        font-size: 1rem;
+    }
+
+    #sim,
+    #nao {
+        height: 40px;
+        width: 90px;
+        font-size: 0.9rem;
+    }
+}

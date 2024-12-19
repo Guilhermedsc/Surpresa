@@ -1,0 +1,59 @@
+/* Body: Centralizado e sem rolagem */
+body {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.painel {
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    max-height: 90%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.painel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.painel h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.painel h2 {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: black;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .painel h1 {
+        font-size: 1.5rem;
+    }
+
+    .painel h2 {
+        font-size: 1rem;
+    }
+
+    #sim,
+    #nao {
+        height: 40px;
+        width: 90px;
+        font-size: 0.9rem;
+    }
+}
